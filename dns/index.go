@@ -55,6 +55,9 @@ func RunOnce() {
 		dnsSelected = &GoDaddyDNS{}
 	case "googledomain":
 		dnsSelected = &GoogleDomain{}
+	case "azuredns":
+		dnsSelected = &AzureDNSProvider{}
+		
 	default:
 		dnsSelected = &Alidns{}
 	}
